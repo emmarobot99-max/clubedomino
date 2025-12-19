@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Verificação de Autenticidade — Clube do Dominó</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="card">
+      <header class="header">
+        <div class="badge">VERIFICAÇÃO</div>
+        <h1>Registro de Autenticidade</h1>
+        <p class="sub">
+          Clube do Dominó — Condomínio Mediterranê
+        </p>
+      </header>
+
+      <section id="status" class="status loading">
+        Carregando registro…
+      </section>
+
+      <section id="content" class="content hidden">
+        <div class="row">
+          <div class="label">Titular</div>
+          <div id="nome" class="value"></div>
+        </div>
+
+        <div class="row">
+          <div class="label">Título</div>
+          <div id="titulo" class="value"></div>
+        </div>
+
+        <div class="row">
+          <div class="label">Ano</div>
+          <div id="ano" class="value"></div>
+        </div>
+
+        <div class="row">
+          <div class="label">Clube</div>
+          <div id="clube" class="value"></div>
+        </div>
+
+        <div class="row">
+          <div class="label">Local</div>
+          <div id="local" class="value"></div>
+        </div>
+
+        <div class="row">
+          <div class="label">Emissão</div>
+          <div id="emissao" class="value"></div>
+        </div>
+
+        <div class="row">
+          <div class="label">Identificador</div>
+          <div id="id" class="value mono"></div>
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="note">
+          Este certificado foi conferido e validado para fins de resenha e honra dominística.
+          “Buchuda” = vitória por <strong>6×0</strong>.
+        </p>
+      </section>
+
+      <section id="notfound" class="content hidden">
+        <h2>Registro não encontrado</h2>
+        <p class="note">
+          O identificador informado não existe nesta base.
+          Verifique se o QR Code corresponde ao certificado correto.
+        </p>
+        <div class="divider"></div>
+        <p class="mono small" id="missingId"></p>
+      </section>
+
+      <footer class="footer">
+        <span class="small">Página estática (GitHub Pages). Sem coleta de dados.</span>
+      </footer>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
