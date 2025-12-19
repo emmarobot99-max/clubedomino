@@ -20,7 +20,7 @@ async function main() {
   }
 
   try {
-    const res = await fetch('./data/certificados.json', { cache: 'no-store' });
+    const res = await fetch('./certificados.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('Falha ao carregar base');
 
     const db = await res.json();
